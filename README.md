@@ -1,7 +1,7 @@
 # NBA-shot-evolution
 Evolution of shot selection in the league over the last 20 years (2004/2024).
 
-ù
+source: https://www.kaggle.com/datasets/mexwell/nba-shots?resource=download&select=NBA_2005_Shots.csv
 
 
 
