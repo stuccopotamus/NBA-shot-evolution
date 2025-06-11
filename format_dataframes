@@ -1,25 +1,36 @@
 import pandas as pd
+import os
 
-## import dataframes to the file
-kobe_era = pd.read_csv('nba_shot_types_0610.csv')
-lebron_era = pd.read_csv('nba_shot_types_1115.csv')
-curry_era = pd.read_csv('nba_shot_types_1620.csv')
-europe_era = pd.read_csv('nba_shot_types_2124.csv')
+# create a list of file paths
+folder_path = 'shots/'
+years = range(2004, 2025)
+csv_files = [os.path.join(folder_path, f"NBA_{year}_Shots.csv") for year in years]
 
-## refine dataframes, only select key columns
+# read csv files maintaining column names
+first_db = pd.read_csv(csv_files[0])
+
+columns = first_db.columns
+rest_dbs = [
+    pd.read_csv(file, skiprows=1, names=columns)
+    for file in csv_files[1:]
+    if os.path.exists(file)
+]
+
+# concatenate files into one
+shots_merged = pd.concat([first_db] + rest_dbs, ignore_index=True)
+
+# refine dataframe, only selecting key columns
 data_cols = ['SEASON_1',
              'SEASON_2',
              'TEAM_ID',
+             'POSITION_GROUP',
              'POSITION',
              'BASIC_ZONE',
              'SHOT_DISTANCE']
 
-wb_kobe_era = kobe_era[data_cols]
-wb_lebron_era = lebron_era[data_cols]
-wb_curry_era = curry_era[data_cols]
-wb_europe_era = europe_era[data_cols]
+shots_merged_v2 = shots_merged[data_cols]
 
-## format team codes
+# set team codes
 team_id_to_team_code = {
     1610612737: 'ATL',
     1610612738: 'BOS',
@@ -53,13 +64,7 @@ team_id_to_team_code = {
     1610612766: 'CHA'
     }
 
-wb_kobe_era['TEAM_CODE'] = wb_kobe_era['TEAM_ID'].map(team_id_to_team_code)
-wb_lebron_era['TEAM_CODE'] = wb_lebron_era['TEAM_ID'].map(team_id_to_team_code)
-wb_curry_era['TEAM_CODE'] = wb_curry_era['TEAM_ID'].map(team_id_to_team_code)
-wb_europe_era['TEAM_CODE'] = wb_europe_era['TEAM_ID'].map(team_id_to_team_code)
+shots_merged_v2['TEAM_CODE'] = shots_merged_v2['TEAM_ID'].map(team_id_to_team_code)
 
-## export workbooks
-wb_kobe_era.to_csv('kobe_era.csv')
-wb_lebron_era.to_csv('lebron_era.csv')
-wb_curry_era.to_csv('curry_era.csv')
-wb_europe_era.to_csv('europe_era.csv')
+# save new file
+shots_merged_v2.to_csv('combined_shots.csv', index=False)
