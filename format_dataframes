@@ -79,13 +79,24 @@ shots_merged_v2 = shots_merged_v2.drop('team_id', axis=1)
 # convert measurements from feet to metres
 shots_merged_v2['distance'] = (shots_merged_v2['distance'] * 0.3048).round(1)
 
-# better nomenclature
+# improve nomenclature and group values for shot types
 shots_merged_v2['shot_type'] = shots_merged_v2['shot_type'].replace({
     'Above the Break 3' : 'Above Arch 3',
     'Left Corner 3' : 'Corner 3 Left',
     'Right Corner 3' : 'Corner 3 Right',
     'In The Paint (Non-RA)' : 'Paint'
 })
+
+shot_type_map = {
+    '3P': ['Above Arch 3', 'Backcourt', 'Corner 3 Left', 'Corner 3 Right'],
+    'MidRange': ['Mid-Range'],
+    'Paint': ['Paint', 'Restricted Area']
+}
+
+value_to_group = {v: k for k, group in shot_type_map.items() for v in group}
+
+shots_merged_v2['shot_type_simplified'] = shots_merged_v2['shot_type'].apply(
+    lambda x: value_to_group.get(x, 'other'))
 
 # save new file
 shots_merged_v2.to_csv('combined_shots.csv', index=False)
