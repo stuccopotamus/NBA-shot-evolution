@@ -20,15 +20,23 @@ rest_dbs = [
 shots_merged = pd.concat([first_db] + rest_dbs, ignore_index=True)
 
 # refine dataframe, only selecting key columns
-data_cols = ['SEASON_1',
-             'SEASON_2',
+data_cols = ['SEASON_2',
              'TEAM_ID',
              'POSITION_GROUP',
-             'POSITION',
              'BASIC_ZONE',
+             'LOC_X',
+             'LOC_Y',
              'SHOT_DISTANCE']
 
-shots_merged_v2 = shots_merged[data_cols]
+shots_merged_v2 = shots_merged[data_cols].rename(columns={
+    'SEASON_2': 'season',
+    'TEAM_ID': 'team_id',
+    'POSITION_GROUP': 'position',
+    'BASIC_ZONE': 'shot_type',
+    'LOC_X': 'x',
+    'LOC_Y': 'y',
+    'SHOT_DISTANCE': 'distance'
+})
 
 # set team codes
 team_id_to_team_code = {
@@ -64,7 +72,20 @@ team_id_to_team_code = {
     1610612766: 'CHA'
     }
 
-shots_merged_v2['TEAM_CODE'] = shots_merged_v2['TEAM_ID'].map(team_id_to_team_code)
+shots_merged_v2['team_code'] = shots_merged_v2['team_id'].map(team_id_to_team_code)
+
+shots_merged_v2 = shots_merged_v2.drop('team_id', axis=1)
+
+# convert measurements from feet to metres
+shots_merged_v2['distance'] = (shots_merged_v2['distance'] * 0.3048).round(1)
+
+# better nomenclature
+shots_merged_v2['shot_type'] = shots_merged_v2['shot_type'].replace({
+    'Above the Break 3' : 'Above Arch 3',
+    'Left Corner 3' : 'Corner 3 Left',
+    'Right Corner 3' : 'Corner 3 Right',
+    'In The Paint (Non-RA)' : 'Paint'
+})
 
 # save new file
 shots_merged_v2.to_csv('combined_shots.csv', index=False)
