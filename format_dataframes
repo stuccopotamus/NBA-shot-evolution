@@ -20,7 +20,8 @@ rest_dbs = [
 shots_merged = pd.concat([first_db] + rest_dbs, ignore_index=True)
 
 # refine dataframe, only selecting key columns
-data_cols = ['SEASON_2',
+data_cols = ['SEASON_1',
+             'SEASON_2',
              'TEAM_ID',
              'POSITION_GROUP',
              'BASIC_ZONE',
@@ -29,6 +30,7 @@ data_cols = ['SEASON_2',
              'SHOT_DISTANCE']
 
 shots_merged_v2 = shots_merged[data_cols].rename(columns={
+    'SEASON_1': 'year',
     'SEASON_2': 'season',
     'TEAM_ID': 'team_id',
     'POSITION_GROUP': 'position',
