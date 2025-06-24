@@ -57,11 +57,13 @@ Following an analytics outburst, the NBA’s 3-point revolution is changing the 
   In contrast, 3-point attempts nearly doubled, from 18.68% to 39.48% of total FGAs
 - Teams now average ~35 3PA per game, compared to ~14 two decades ago, in a constant year-over-year increment
 - 3-point attempts per player position
+  
 | Position | 3PA (2004) | 3PA (2024) | % Increase |
 |----------|------------|------------|------------|
 | Guards   | 9.1        | 17.5       | +93%       |
 | Forwards | 5.1        | 14.7       | +187%      |
 | Centers  | 0.2        | 2.6        | +1039%     |
+
 > Traditional roles have evolved: whether you are a 6'1" (1.85m) guard or a 7'2" (2.20m) center, you are required to shoot 3s in the modern NBA.
 - The role of efficiency:
   - Data shows that 3P% ≈ mid-range FG%
@@ -75,15 +77,16 @@ Following an analytics outburst, the NBA’s 3-point revolution is changing the 
 - Mid-range shots are increasingly rarer -> defensive focus on perimeter and paint
   - Exploit increasing defensive gaps in the mid-range
 - Regardless it is important not to fossilize on a fixed strategy, adaptability and rapid reads are key
+
 > On a microscopic level, basketball is a game of action and reactions. Team strategies should combine shot profiles and have threats from all positions on the court and remain unpredictable.
+
 > On a macroscopic level, teams have to acknowledge the trends and pick talent that fits the current play styles. Similarly developing players have to focus on trainin the more valuable skills for the current time.
 
 
 
 ## Assumptions and Caveats
 - Seasons 2011–12, 2019–20, 2021–22 had fewer games due to lockout and COVID-19 
-- The analysis is based solely on shot-level data
-  - lacking player ids and advanced play-by-play data
+- Lacking player ids and advanced play-by-play data
 
 
 
