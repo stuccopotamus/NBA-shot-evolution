@@ -1,4 +1,4 @@
-# 📊 How Statisticians Ruined Basketball  
+# How Statisticians Ruined Basketball  
 ### The NBA 3-Pointer Revolution
 
 ---
