@@ -22,21 +22,21 @@ The primary databases for this analysis were shot logs for each NBA season from 
 A first Excel review identified an issue with incorrectly scaled data in 3 of the seasons.
 
 ### Data Cleaning & Formatting
-- [Python script for correcting scaled data](#python/fixing_wrongly_scaled_data)  
-- [Python script for general cleaning, formatting, and grouping](#python/format_dataframes)
+[Python code](https://github.com/stuccopotamus/NBA-shot-evolution/blob/main/python/fixing_wrongly_scaled_data) used for correcting wrongly scaled data
+[Python code](https://github.com/stuccopotamus/NBA-shot-evolution/blob/main/python/format_dataframes) used for cleaning, formatting and grouping
 
 ### Data Structure
 The cleaned data was consolidated into a single database with the following structure:
 
-![db_nba.pdf](https://github.com/user-attachments/files/20889557/db_nba.pdf)
+![image](https://github.com/user-attachments/files/20889557/db_nba.pdf)
 
-## Data Visualisation
+### Data Visualisation
 Tableau Public was used to carry out visualisations, the final product can be found [here](https://public.tableau.com/app/profile/luca.stucchi/viz/HowstatisticiansruinedBasketball/Overview).
 
-## Data Limitations
+### Data Limitations
 - No player-specific data included
 - No play-by-play actions
-- Lacks seasons prior to 2004, notably missing data from 1979-80, introduction of 3-point line.
+- Lacks seasons prior to 2004, notably missing data from 1979-80, introduction of 3-point line
 
 
 
