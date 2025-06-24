@@ -22,8 +22,9 @@ The primary databases for this analysis were shot logs for each NBA season from 
 A first Excel review identified an issue with incorrectly scaled data in 3 of the seasons.
 
 ### Data Cleaning & Formatting
-[Python code](https://github.com/stuccopotamus/NBA-shot-evolution/blob/main/python/fixing_wrongly_scaled_data) used for correcting wrongly scaled data
-[Python code](https://github.com/stuccopotamus/NBA-shot-evolution/blob/main/python/format_dataframes) used for cleaning, formatting and grouping
+Python code used for [correcting wrongly scaled data](https://github.com/stuccopotamus/NBA-shot-evolution/blob/main/python/fixing_wrongly_scaled_data)
+
+Python code used for [cleaning, formatting and grouping](https://github.com/stuccopotamus/NBA-shot-evolution/blob/main/python/format_dataframes)
 
 ### Data Structure
 The cleaned data was consolidated into a single database with the following structure:
