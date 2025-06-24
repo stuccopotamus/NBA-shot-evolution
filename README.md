@@ -1,127 +1,126 @@
-# NBA-shot-evolution
-Evolution of shot selection in the league over the last 20 years (2004/2024).
+# 📊 How Statisticians Ruined Basketball  
+### The NBA 3-Pointer Revolution
 
-source: https://www.kaggle.com/datasets/mexwell/nba-shots?resource=download&select=NBA_2005_Shots.csv
+---
 
+## Overview
 
+The rise in 3-point shots over the last two decades is explained by a simple mathematical calculation. Consider a prolific shooter:
 
+- A 2-point mid-range jumper typically converts at a **50%** rate, yielding an expected return of **1.0 point per attempt** (0.5 × 2).
+- A 3-point shot, even at a lower **40%** accuracy, has an average value of **1.2 points** (0.4 × 3).
 
-# Project Background
-Backround about the company, including the industry, active years, business model, and key business metrics. Explain this from the POV of a data analyst who is working at the company.
+This marginal efficiency gain has **fundamentally reshaped shot selection**, offensive strategies, and defensive systems across the NBA.
 
-Insights and recommendations are provided on the following key areas:
+This project explores how **shot selection has evolved** in the NBA over the last **21 seasons**, from 2004 to 2024.
 
-- **Category 1:** 
-- **Category 2:** 
-- **Category 3:** 
-- **Category 4:** 
+---
 
-The SQL queries used to inspect and clean the data for this analysis can be found here [link].
+## Data Overview
 
-Targed SQL queries regarding various business questions can be found here [link].
+### Data Source
 
-An interactive Tableau dashboard used to report and explore sales trends can be found here [link].
+The primary dataset consists of NBA shot logs from **2004 to 2024**, capturing every shot attempted in official NBA games.
 
+> [Download the dataset on Kaggle](https://www.kaggle.com/datasets/mexwell/nba-shots?resource=download&select=NBA_2005_Shots.csv)
 
+---
 
-# Data Structure & Initial Checks
+### Initial Data Checks
 
-The companies main database structure as seen below consists of four tables: table1, table2, table3, table4, with a total row count of X records. A description of each table is as follows:
-- **Table 2:**
-- **Table 3:**
-- **Table 4:**
-- **Table 5:**
+A first-pass Excel review identified an issue with **incorrectly scaled data** in 3 of the seasons.
 
-[Entity Relationship Diagram here]
+### Data Cleaning & Formatting
 
+- [Python script for correcting scaled data](#)  
+- [Python script for general cleaning, formatting, and grouping](#)
 
+### Data Structure
 
-# Executive Summary
+The cleaned data was consolidated into a single database, with key fields structured as shown below:
 
-### Overview of Findings
+> 🖼️ *(Insert visual schema of cleaned database here)*
 
-Explain the overarching findings, trends, and themes in 2-3 sentences here. This section should address the question: "If a stakeholder were to take away 3 main insights from your project, what are the most important things they should know?" You can put yourself in the shoes of a specific stakeholder - for example, a marketing manager or finance director - to think creatively about this section.
+---
 
-[Visualization, including a graph of overall trends or snapshot of a dashboard]
+## Data Visualisation
 
+Visualizations were created using **Tableau Public**.
 
+> [View the dashboard on Tableau Public](#)
 
-# Insights Deep Dive
-### Category 1:
+---
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+## Data Limitations
 
-[Visualization specific to category 1]
+- No player-specific data included
+- Lacks seasons **prior to 2004**, notably missing data from **1979–2004**, including the **inception of the 3-point line in 1979**
 
+---
 
-### Category 2:
+## Key Questions
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+This project is based on three central questions:
 
-[Visualization specific to category 2]
+1. **How has 3-point shot selection evolved in the last 20 years?**
+2. **How has mid-range shot selection changed in response?**
+3. **What are the broader consequences of this transformation?**
 
+---
 
-### Category 3:
+## Key Findings
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+- In **2003/04**, **mid-range shots** made up **35.65%** of total FGAs; by **2023/24**, that dropped to **~11%**
+- In contrast, **3-point attempts** nearly **doubled** — from **18.68%** to **39.48%** of total FGAs
+- Teams now average **~35 3PA per game**, compared to **~14 two decades ago**
 
-[Visualization specific to category 3]
+### Position-Based Growth in 3PA (2004 → 2024)
 
+| Position | 3PA (2004) | 3PA (2024) | % Increase |
+|----------|------------|------------|------------|
+| Guards   | ~6         | ~12        | +93%       |
+| Forwards | ~5         | ~15        | +187%      |
+| Centers  | ~0.2       | ~2.5       | +1039%     |
 
-### Category 4:
+> The traditional roles have evolved — even **7'2" centers** are now expected to shoot 3s regularly.
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+---
 
-[Visualization specific to category 4]
+## Efficiency and Strategy
 
+- **3P% ≈ 40%** from 22–27 ft range, with little drop-off past the arc
+- This has incentivized teams to emphasize:
+  - 3-point shots
+  - Rim finishes
+  - **De-prioritize** mid-range shots
 
+### Strategic Adaptation
 
-# Recommendations:
+- Teams should **exploit defensive gaps** by selectively reintroducing mid-range shots
+- Mid-range zones are increasingly **undefended** due to defensive focus on perimeter and paint
 
-Based on the insights and findings above, we would recommend the [stakeholder team] to consider the following: 
+---
 
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
+## Recommendations
 
+- Continue tracking 3-point trends and adjusting rosters accordingly
+- Use the **mid-range as a counter-strategy** where appropriate
+- Encourage **versatility in player development** — regardless of position
+- Avoid overcommitting to a single strategy: **Adaptability** wins games
 
-# Assumptions and Caveats:
+> On a **microscopic level**, basketball is a **game of reads and reactions**. Coaches should mix shot profiles to remain unpredictable.
 
-Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
+---
 
-* Assumption 1 (ex: missing country records were for customers based in the US, and were re-coded to be US citizens)
-  
-* Assumption 1 (ex: data for December 2021 was missing - this was imputed using a combination of historical trends and December 2020 data)
-  
-* Assumption 1 (ex: because 3% of the refund date column contained non-sensical dates, these were excluded from the analysis)
+## Assumptions and Caveats
+
+- Certain seasons (e.g. 2011–12, 2019–20, 2021–22) had **fewer games** due to lockouts, COVID-19, or other events
+- The analysis is based solely on **shot-level data**
+- It lacks **player identity**, **play types**, and **advanced play-by-play context**
+- For deeper insight, refer to [this article](#) that inspired the project
+
+---
+
+## Summary
+
+The 3-point revolution is here to stay — and it’s not just about math, but **how that math has reshaped the court, the players, and the tactics** of the modern NBA. 
