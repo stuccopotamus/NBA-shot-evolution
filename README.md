@@ -1,28 +1,23 @@
 # How Statisticians Ruined Basketball  
-### The NBA 3-Pointer Revolution
+## The NBA 3-Pointer Revolution
 
----
 
-## Overview
+The rise in 3-point shots over the last two decades is explained by a simple mathematical calculation. 
+Consider a prolific shooter:
 
-The rise in 3-point shots over the last two decades is explained by a simple mathematical calculation. Consider a prolific shooter:
+- A 2-point mid-range jumper typically converts at a 50% rate, yielding an expected return of 1.0 point per attempt (0.5 × 2).
+- A 3-point shot, even at a lower 40% accuracy, has an average value of 1.2 points per attempt (0.4 × 3).
 
-- A 2-point mid-range jumper typically converts at a **50%** rate, yielding an expected return of **1.0 point per attempt** (0.5 × 2).
-- A 3-point shot, even at a lower **40%** accuracy, has an average value of **1.2 points** (0.4 × 3).
+This marginal efficiency gain has fundamentally reshaped shot selection, offensive and also defensive strategy across the league. 
 
-This marginal efficiency gain has **fundamentally reshaped shot selection**, offensive strategies, and defensive systems across the NBA.
+This project explores how shot selection has evolved in the NBA over the last 21 seasons, from 2004 to 2024.
 
-This project explores how **shot selection has evolved** in the NBA over the last **21 seasons**, from 2004 to 2024.
-
----
 
 ## Data Overview
 
 ### Data Source
 
-The primary dataset consists of NBA shot logs from **2004 to 2024**, capturing every shot attempted in official NBA games.
-
-> [Download the dataset on Kaggle](https://www.kaggle.com/datasets/mexwell/nba-shots?resource=download&select=NBA_2005_Shots.csv)
+The primary databases for this analysis were shot logs for each NBA season from 2004–2024. They include every shot attempted in official NBA games. They can be found> [here](https://www.kaggle.com/datasets/mexwell/nba-shots?resource=download&select=NBA_2005_Shots.csv)
 
 ---
 
