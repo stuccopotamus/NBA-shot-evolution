@@ -29,7 +29,7 @@ Python code used for [cleaning, formatting and grouping](https://github.com/stuc
 ### Data Structure
 The cleaned data was consolidated into a single database with the following structure:
 
-![db_nba.pdf](https://github.com/user-attachments/files/20897166/db_nba.pdf)
+[db_nba.pdf](https://github.com/user-attachments/files/20897166/db_nba.pdf)
 
 ### Data Visualisation
 Tableau Public was used to carry out visualisations, the final product can be found [here](https://public.tableau.com/app/profile/luca.stucchi/viz/HowstatisticiansruinedBasketball/Overview).
