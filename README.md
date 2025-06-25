@@ -1,10 +1,11 @@
 # How Statisticians Ruined Basketball  
 
-<p align="center">
-  <img src="tableau/overview.jpg" alt="Overview" width="450"/>
-  &nbsp;&nbsp;&nbsp;
-  <img src="tableau/year_over_year_snapshot.jpg" alt="Year Over Year Snapshot" width="450"/>
-</p>
+<table>
+  <tr>
+    <td><img src="tableau/overview.jpg" alt="Overview" width="400"/></td>
+    <td><img src="tableau/year_over_year_snapshot.jpg" alt="Year Over Year Snapshot" width="400"/></td>
+  </tr>
+</table>
 
 ## The NBA 3-Pointer Revolution
 
