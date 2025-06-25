@@ -1,4 +1,8 @@
 # How Statisticians Ruined Basketball  
+
+![overview](https://github.com/stuccopotamus/NBA-shot-evolution/blob/892631b02d709e503f0b3f99047f06bb7667e054/tableau/overview.pdf)
+![snapshot](https://github.com/stuccopotamus/NBA-shot-evolution/blob/892631b02d709e503f0b3f99047f06bb7667e054/tableau/year_over_year_snapshot.pdf)
+
 ## The NBA 3-Pointer Revolution
 
 The rise in 3-point shots over the last two decades is explained by a simple mathematical calculation. 
