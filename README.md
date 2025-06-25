@@ -29,7 +29,7 @@ Python code used for [cleaning, formatting and grouping](https://github.com/stuc
 ### Data Structure
 The cleaned data was consolidated into a single database with the following structure:
 
-![image](db_nba.pdf)
+![image alt](https://github.com/stuccopotamus/NBA-shot-evolution/blob/597205bddc25d1366428fdd5217409fecf2f6e6b/db_nba.pdf)
 
 ### Data Visualisation
 Tableau Public was used to carry out visualisations, the final product can be found [here](https://public.tableau.com/app/profile/luca.stucchi/viz/HowstatisticiansruinedBasketball/Overview).
@@ -54,7 +54,7 @@ This project is based on three central questions:
 Following an analytics outburst, the NBA’s 3-point revolution is changing the shape of basketball games.
 
 - In 2003/04, mid-range shots made up 35.65% of total FGAs, but by 2023/24, that dropped to 11.24%
-  In contrast, 3-point attempts nearly doubled, from 18.68% to 39.48% of total FGAs
+- In contrast, 3-point attempts nearly doubled, from 18.68% to 39.48% of total FGAs
 - Teams now average ~35 3PA per game, compared to ~14 two decades ago, in a constant year-over-year increment
 - 3-point attempts per player position
   
