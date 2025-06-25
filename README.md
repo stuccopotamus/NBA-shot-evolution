@@ -33,8 +33,15 @@ Python code used for [cleaning, formatting and grouping](https://github.com/stuc
 ### Data Structure
 The cleaned data was consolidated into a single database with the following structure:
 
-![db](https://github.com/stuccopotamus/NBA-shot-evolution/blob/0b17039a8b09b75d80efcd65476939200e9f91dd/db_nba.jpg)
+# NBA 3-Point Revolution Analysis
 
+## 📊 Key Trend
+
+<p align="center">
+  <img src="db_nba.jpg" alt="3pt Shooting Trend" width="500">
+</p>
+
+The chart above shows how the NBA's 3-point attempt rate has increased from 22% to nearly 40% over the last decade.
 ### Data Visualisation
 Tableau Public was used to carry out visualisations, the final product can be found [here](https://public.tableau.com/app/profile/luca.stucchi/viz/HowstatisticiansruinedBasketball/Overview).
 
