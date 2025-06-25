@@ -1,11 +1,10 @@
 # How Statisticians Ruined Basketball  
 
-<table>
-  <tr>
-    <td><img src="tableau/overview.jpg" alt="Overview" width="400"/></td>
-    <td><img src="tableau/year_over_year_snapshot.jpg" alt="Year Over Year Snapshot" width="400"/></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="tableau/overview.jpg" alt="Overview" width="400"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="tableau/year_over_year_snapshot.jpg" alt="Year Over Year Snapshot" width="400"/>
+</p>
 
 ## The NBA 3-Pointer Revolution
 
@@ -37,10 +36,7 @@ Python code used for [cleaning, formatting and grouping](https://github.com/stuc
 ### Data Structure
 The cleaned data was consolidated into a single database with the following structure:
 
-<p align="center">
-  <img src="db_nba.jpg" alt="3pt Shooting Trend" width="500">
-</p>
-
+  <img src="db_nba.jpg" alt="3pt Shooting Trend" width="300">
 
 ### Data Visualisation
 Tableau Public was used to carry out visualisations, the final product can be found [here](https://public.tableau.com/app/profile/luca.stucchi/viz/HowstatisticiansruinedBasketball/Overview).
