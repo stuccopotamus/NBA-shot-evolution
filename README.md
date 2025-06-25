@@ -1,7 +1,11 @@
 # How Statisticians Ruined Basketball  
 
-![overview](https://github.com/stuccopotamus/NBA-shot-evolution/blob/89536088c041344a6966d852468c6c3ea5a63b2d/tableau/overview.jpg)
-![snapshot](https://github.com/stuccopotamus/NBA-shot-evolution/blob/89536088c041344a6966d852468c6c3ea5a63b2d/tableau/year_over_year_snapshot.jpg)
+<table>
+  <tr>
+    <td><img src="tableau/overview.jpg" alt="Overview" width="400"/></td>
+    <td><img src="tableau/year_over_year_snapshot.jpg" alt="Year Over Year Snapshot" width="400"/></td>
+  </tr>
+</table>
 
 ## The NBA 3-Pointer Revolution
 
@@ -33,15 +37,11 @@ Python code used for [cleaning, formatting and grouping](https://github.com/stuc
 ### Data Structure
 The cleaned data was consolidated into a single database with the following structure:
 
-# NBA 3-Point Revolution Analysis
-
-## 📊 Key Trend
-
 <p align="center">
   <img src="db_nba.jpg" alt="3pt Shooting Trend" width="500">
 </p>
 
-The chart above shows how the NBA's 3-point attempt rate has increased from 22% to nearly 40% over the last decade.
+
 ### Data Visualisation
 Tableau Public was used to carry out visualisations, the final product can be found [here](https://public.tableau.com/app/profile/luca.stucchi/viz/HowstatisticiansruinedBasketball/Overview).
 
