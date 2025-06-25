@@ -29,7 +29,7 @@ Python code used for [cleaning, formatting and grouping](https://github.com/stuc
 ### Data Structure
 The cleaned data was consolidated into a single database with the following structure:
 
-![image](https://github.com/user-attachments/files/20889557/db_nba.pdf)
+![image](db_nba.pdf)
 
 ### Data Visualisation
 Tableau Public was used to carry out visualisations, the final product can be found [here](https://public.tableau.com/app/profile/luca.stucchi/viz/HowstatisticiansruinedBasketball/Overview).
@@ -86,11 +86,13 @@ Following an analytics outburst, the NBA’s 3-point revolution is changing the 
 
 ## Assumptions and Caveats
 - Seasons 2011–12, 2019–20, 2021–22 had fewer games due to lockout and COVID-19 
-- Lacking player ids and advanced play-by-play data
+- Lacking player IDs and advanced play-by-play data
 
 
 
 ## Summary
 This study only provides a snapshot to the last 20 years of NBA, focusing mainly on the shot types.
-The 3-point revolution is not looking to slow down soon and statistics are playing a big role in this, reshaping the plays, the players, and tactics of modern basketball. For a more comprehensive read on the subject [this article](https://www.nba.com/news/3-point-era-nba-75) inspired the project. 
+The 3-point revolution is not looking to slow down soon and statistics are playing a big role in this, reshaping the plays, the players, and tactics of modern basketball. 
+
+For a more comprehensive read on the subject [this article](https://www.nba.com/news/3-point-era-nba-75) inspired the project. 
 
