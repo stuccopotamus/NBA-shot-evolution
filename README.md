@@ -37,7 +37,7 @@ Python code used for [cleaning, formatting and grouping](https://github.com/stuc
 ### Data Structure
 The cleaned data was consolidated into a single database with the following structure:
 
-  <img src="db_nba.jpg" alt="3pt Shooting Trend" width="300">
+  <img src="db_nba.jpg" alt="3pt Shooting Trend" width="250">
 
 ### Data Visualisation
 Tableau Public was used to carry out visualisations, the final product can be found [here](https://public.tableau.com/app/profile/luca.stucchi/viz/HowstatisticiansruinedBasketball/Overview).
