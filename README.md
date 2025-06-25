@@ -1,7 +1,7 @@
 # How Statisticians Ruined Basketball  
 
-![overview](https://github.com/stuccopotamus/NBA-shot-evolution/blob/892631b02d709e503f0b3f99047f06bb7667e054/tableau/overview.pdf)
-![snapshot](https://github.com/stuccopotamus/NBA-shot-evolution/blob/892631b02d709e503f0b3f99047f06bb7667e054/tableau/year_over_year_snapshot.pdf)
+![overview](https://github.com/stuccopotamus/NBA-shot-evolution/blob/89536088c041344a6966d852468c6c3ea5a63b2d/tableau/overview.jpg)
+![snapshot](https://github.com/stuccopotamus/NBA-shot-evolution/blob/89536088c041344a6966d852468c6c3ea5a63b2d/tableau/year_over_year_snapshot.jpg)
 
 ## The NBA 3-Pointer Revolution
 
@@ -33,7 +33,7 @@ Python code used for [cleaning, formatting and grouping](https://github.com/stuc
 ### Data Structure
 The cleaned data was consolidated into a single database with the following structure:
 
-![db](https://github.com/stuccopotamus/NBA-shot-evolution/blob/62e8d05fb32c88bea44ebd4749b4f676c7eb8844/db_nba.pdf)
+![db](https://github.com/stuccopotamus/NBA-shot-evolution/blob/0b17039a8b09b75d80efcd65476939200e9f91dd/db_nba.jpg)
 
 ### Data Visualisation
 Tableau Public was used to carry out visualisations, the final product can be found [here](https://public.tableau.com/app/profile/luca.stucchi/viz/HowstatisticiansruinedBasketball/Overview).
